@@ -1,1 +1,14 @@
-https://yuque.antfin.com/docs/share/5ff0bead-9c89-4eb6-b6b5-6d921eb36251?# 《antcode python脚手架接入》
+## $ AESM^{2} $
+
+The tensorflow implementation of SIGIR 2022 paper "Automatic Expert Selection for Multi-Scenario and Multi-Task
+Search".
+
+### Requirement
+- Python 3.6
+- TensorFlow 1.12
+
+### Dataset
+The public dataset used in $AESM^{2}$ is available on [Tianchi](https://tianchi.aliyun.com/dataset/dataDetail?dataId=74690) platform.
+
+
+

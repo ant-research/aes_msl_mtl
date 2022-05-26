@@ -1,0 +1,44 @@
+{
+  "base": {
+    "learning_rate": 0.0001,
+    "lambda_ctcvr": 1,
+    "lambda_ctr": 0.1,
+    "l2_norm": 0.0001,
+    "random_seed": 2021,
+    "lambda_sp": 1e-3,
+    "lambda_sh": 1e-4
+  },
+
+  "scenario": {
+    "tree_depth": 1,
+    "1": {
+      "num_layer": 2,
+      "scenarios": ["nl", "fr", "us", "es"],
+      "num_gate": 4,
+      "topK_sp": 2,
+      "topK_sh": 2,
+      "num_expert": 10,
+      "expert_dnn_hidden_units": [64],
+      "expert_act": "relu",
+      "noise_scale": 0.1,
+      "drop_rate": 0.1,
+      "l2_norm": 0.0001,
+      "random_seed": 2021
+    }
+  },
+
+  "task": {
+    "num_layer": 2,
+    "tasks": ["ctr", "cvr"],
+    "num_gate": 2,
+    "topK_sp": 1,
+    "topK_sh": 1,
+    "num_expert": 3,
+    "expert_dnn_hidden_units": [32],
+    "expert_act": "relu",
+    "noise_scale": 0.1,
+    "drop_rate": 0.1,
+    "l2_norm": 0.0001,
+    "random_seed": 2021
+  }
+}

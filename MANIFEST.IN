@@ -1,4 +1,0 @@
-include *.md
-include requirements.txt
-recursive-include ai-code *
-global-exclude *.pyc *.csv *.xlsx *.xls
