@@ -54,7 +54,7 @@ def build_gate(input, config, scope_name, is_train):
 
 def cal_KLdis(p, q):
     """
-        calculate KL distance
+        calculate Kullback-Leibler divergence
     """
     return tf.reduce_sum(tf.multiply(p, tf.log(tf.div(p, q))), 2)
 
